@@ -1,6 +1,6 @@
 <div class="post-meta clf">
   <span class="pmt pms fa-book">
-    {% if post.categories and post.categories.length %}
+    {% if post.categories and post.categories.length and post.categories.toArray %}
       {{ list_categories(post.categories, {
         show_count: false,
         separator: ', ',
@@ -15,7 +15,7 @@
     <span id="post-view" data="{{ post.path }}">Loading</span> Hits
   </span>
   <span class="pmt pms extra fa-tag">
-    {% if post.tags and post.tags.length %}
+    {% if post.tags and post.tags.length and post.tags.toArray %}
       {{ list_tags(post.tags, {
         show_count: false,
         separator: ', ',
