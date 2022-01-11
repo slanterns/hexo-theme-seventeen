@@ -11,10 +11,10 @@
     {% endif %}
   </span>
   <span class="pmt pms fa-clock-o">{{ date(post.date, config.date_format) }}</span>
-  <span class="pmt pms fa-eye">
+  {# <span class="pmt pms fa-eye">
     <span id="post-view" data="{{ post.path }}">Loading</span> Hits
-  </span>
-  <span class="pmt pms extra fa-tag">
+  </span> #}
+  <span class="pmt pms fa-tag">
     {% if post.tags and post.tags.length and post.tags.toArray %}
       {{ list_tags(post.tags, {
         show_count: false,
