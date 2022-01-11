@@ -23,9 +23,15 @@
           </div>
         {% endfor %}
       {% endif %}
-      <div class="ico">
-        <a href="{{ theme.rss }}" target="_blank" class="fa fa-rss" ></a>
-      </div>
+      {% set rss = theme.rss %}
+      {% if ((not rss) or (rss === '')) and config.feed and config.feed.path %}
+        {% set rss = config.feed.path %}
+      {% endif %}
+      {% if rss %}
+        <div class="ico">
+          <a href="{{ full_url_for(rss) }}" target="_blank" title="RSS" class="fa fa-rss"></a>
+        </div>
+      {% endif %}
     </div>
 
     <div class="ico right" id="tg-m"><a href="javascript:;" class="fa fa-bars"></a></div>
