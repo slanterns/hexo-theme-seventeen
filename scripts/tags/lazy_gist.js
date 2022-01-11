@@ -11,9 +11,10 @@
  * Click button to load Gist.
  */
 function gistTag(args, content) {
-  var hash = args.shift();
+  const hash = args.shift();
+  const file = args.length ? `${args[0]}` : '';
 
-  return '<p class="p-load-gist"><button class="btn btn-default load-gist" data-hash="' + hash + '">点击以加载 Gist（无法加载时请翻墙）</button></p>';
+  return `<p class="p-load-gist"><button class="btn btn-default load-gist" data-hash="${hash}" data-file="${file}">Click to expand gist ${hash}${file.length ? ': ' + file : ''}</button></p>`;
 }
 
 hexo.extend.tag.register('lazy_gist', gistTag);

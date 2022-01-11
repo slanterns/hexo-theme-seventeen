@@ -7,6 +7,7 @@
 
 'use strict';
 
+// seems a reverse proxy for gist but deprecated
 function gistTag(args, content) {
   var id = args.shift();
   var file = args.length ? '?file=' + args[0] : '';

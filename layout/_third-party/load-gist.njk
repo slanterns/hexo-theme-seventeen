@@ -7,8 +7,9 @@
 
 <script type="text/javascript">
     $('.load-gist').on('click', function() {
+        const file = $(this).data('file');
         var gist = {
-            url: '//work.prinzeugen.net/gist/printempw/' + $(this).data('hash') + '.json?callback=?',
+            url: '//gist.github.com/' + $(this).data('hash') + '.json?' + (file.length ? `file=${file}&` : '') + 'callback=?',
             dom: this
         };
 
