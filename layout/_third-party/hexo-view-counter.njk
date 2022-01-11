@@ -51,7 +51,7 @@
     });
 </script>
 
-{% if (is_post() || page.layout == 'page') %}
+{% if (is_post() or page.layout == 'page') %}
 <script type="text/javascript">
     counter.incPostViewBySlug(
         $('#post-view').attr('data').cleanSlug()

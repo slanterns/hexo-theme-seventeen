@@ -1,7 +1,7 @@
 {# For normal widget, use id `sbnormal` instead of `sbpin` which for pinned widget #}
 <div id="sbpin">
   {# TOC Widget #}
-  {% if (is_post() || is_page()) && page.toc !== false %}
+  {% if (is_post() or is_page()) and page.toc !== false %}
   <div class="clf widget-item widget-toc">
     <h3 class="widget-title">文章目录</h3>
     <div class="textwidget">

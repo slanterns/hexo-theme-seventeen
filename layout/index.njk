@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block content %}
-  {% for post in page.posts %}
+  {% for post in page.posts.toArray() %}
     {% set post_class = 'post post-type-' + post.type | default('normal') %}
 
     <article class="{{ post_class }} hentry">

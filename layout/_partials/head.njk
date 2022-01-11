@@ -39,12 +39,13 @@
 }}
 
 {# RSS Feed #}
-{% if theme.rss === '' and config.feed and config.feed.path %}
-  {% set theme.rss = config.feed.path %}
+{% set rss = theme.rss %}
+{% if ((not rss) or (rss === '')) and config.feed and config.feed.path %}
+  {% set rss = config.feed.path %}
 {% endif %}
 
-{% if theme.rss %}
-  {{ feed_tag(url_for(theme.rss), {'type': 'application/atom+xml'}) }}
+{% if rss %}
+  {{ feed_tag(full_url_for(rss), {'type': 'application/atom+xml'}) }}
 {% endif %}
 
 {% if theme.canonical %}
@@ -63,4 +64,4 @@
   asset('libs/font-awesome/css/font-awesome.min.css')
 ]) }}
 
-{% include 'fonts.njk' %}
+{% include './fonts.njk' %}
