@@ -1,12 +1,12 @@
-{% extends '_layout.swig' %}
+{% extends '_layout.njk' %}
 
-{% block title %}归档 - {{ config.title }}{% endblock %}
+{% block title %}标签: {{ page.tag }} - {{ config.title }}{% endblock %}
 
-{% block page_class %}page-archive{% endblock %}
+{% block page_class %}page-tag{% endblock %}
 
 {% block content %}
   <div class="hentry">
-    <h1 class="post-title">归档 Archive <small>（目前共计 {{ site.posts.length }} 篇文章）</small></h1>
+    <h1 class="post-title">{{ page.tag }} <small>（此标签下共计 {{ site.tags.findOne({name: page.tag}).length }} 篇文章）</small></h1>
     <section class="posts-collapse">
     {% for post in page.posts %}
 
@@ -22,11 +22,11 @@
       {% endif %}
       {# endshow #}
 
-      {{ partial('_partials/post-collapse.swig', {'post': post}) }}
+      {{ partial('_partials/post-collapse.njk', {'post': post}) }}
 
     {% endfor %}
     </section>
   </div>
 
-  {% include '_partials/pagination.swig' %}
+  {% include '_partials/pagination.njk' %}
 {% endblock %}

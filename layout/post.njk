@@ -1,4 +1,4 @@
-{% extends '_layout.swig' %}
+{% extends '_layout.njk' %}
 
 {% block title %}{{ page.title }} - {{ config.title }}{% endblock %}
 
@@ -12,7 +12,7 @@
       <a href="{{ url_for(page.path) }}">{{ page.title | default('无标题') }}</a>
     </h1>
 
-    {% if is_post() %}{% include '_partials/expired-warning.swig' %}{% endif %}
+    {% if is_post() %}{% include '_partials/expired-warning.njk' %}{% endif %}
 
     <div class="post-content">
       {% if page.toc !== false %}
@@ -24,14 +24,14 @@
       <div class="post-about"><p>除另有声明外，本博客文章均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享(Creative Commons) 署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a> 进行许可。</p></div>
     </div>
 
-    {{ partial('_partials/post-meta.swig', {'post': page}) }}
+    {{ partial('_partials/post-meta.njk', {'post': page}) }}
   </article>
 
   {% if page.comments %}
-    {% include '_partials/comment.swig' %}
+    {% include '_partials/comment.njk' %}
   {% endif %}
 {% endblock %}
 
 {% block script_extra %}
-  {% include '_third-party/disqus.swig' %}
+  {% include '_third-party/disqus.njk' %}
 {% endblock %}

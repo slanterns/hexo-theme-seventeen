@@ -1,4 +1,4 @@
-{% extends '_layout.swig' %}
+{% extends '_layout.njk' %}
 
 {% block title %}{{ config.title }} - (ゝω·)~ kira{% endblock %}
 
@@ -29,9 +29,9 @@
         {% endif %}
       </div>
 
-      {% include '_partials/post-meta.swig' %}
+      {% include '_partials/post-meta.njk' %}
     </article>
   {% endfor %}
 
-  {% include '_partials/pagination.swig' %}
+  {% include '_partials/pagination.njk' %}
 {% endblock %}

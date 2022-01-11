@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ config.language }}">
   <head>
-    {% include '_partials/head.swig' %}
+    {% include '_partials/head.njk' %}
     <title>{% block title %}{% endblock %}</title>
   </head>
 
   <body lang="{{ config.language }}">
 
     <div id="pageframe" class="fw">
-      {% include '_partials/nanobar.swig' %}
+      {% include '_partials/nanobar.njk' %}
 
       <div id="top" class="fw clf">
-        {% include '_partials/header.swig' %}
+        {% include '_partials/header.njk' %}
       </div>
 
       <div id="container" class="wc center clf {% block page_class %}{% endblock %}">
@@ -21,11 +21,11 @@
           {% block content %}{% endblock %}
         </div>
 
-        {% include '_partials/sidebar.swig' %}
+        {% include '_partials/sidebar.njk' %}
       </div><!-- #container -->
 
       <div id="foot" class="fw">
-        {% include '_partials/footer.swig' %}
+        {% include '_partials/footer.njk' %}
       </div>
 
     </div><!-- #pageframe.fw -->
@@ -35,13 +35,13 @@
       <span class="fa fa-angle-up"></span>
     </div>
 
-    {% include '_partials/scripts.swig' %}
-    {% include '_third-party/google-analytics.swig' %}
-    {% include '_third-party/do-you-like-me.swig' %}
-    {% include '_third-party/kaomoji.swig' %}
-    {% include '_third-party/load-gist.swig' %}
-    {% include '_third-party/hexo-view-counter.swig' %}
-    {% include '_third-party/aplayer.swig' %}
+    {% include '_partials/scripts.njk' %}
+    {% include '_third-party/google-analytics.njk' %}
+    {% include '_third-party/do-you-like-me.njk' %}
+    {% include '_third-party/kaomoji.njk' %}
+    {% include '_third-party/load-gist.njk' %}
+    {% include '_third-party/hexo-view-counter.njk' %}
+    {% include '_third-party/aplayer.njk' %}
 
     {% block script_extra %}{% endblock %}
 
