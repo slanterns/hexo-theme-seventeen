@@ -9,7 +9,7 @@ version: 1.7
 # ---------------------------------------------------------------
 # Color Themes
 #
-# Available Colors: ['lightblue', 'lightgreen', 'orange', 'pink', 'purple', 'red']
+# Available Colors: ['lightblue', 'lightgreen', 'orange', 'pink', 'purple', 'red', 'tengzi']
 # ---------------------------------------------------------------
 color: lightblue
 

@@ -19,7 +19,8 @@ hexo.extend.helper.register('chromeThemeColor', (color) => {
         'red':           "#E74C3C",
         'orange':        "#FF8800",
         'pink':          "#A77A94",
-        'purple':        "#6A5A8C"
+        'purple':        "#6A5A8C",
+        'tengzi':        "#8F82BC"
     };
 
     return map[color];
@@ -32,7 +33,8 @@ hexo.extend.helper.register('nanobarThemeColor', (color) => {
         'red':           "#B51506",
         'orange':        "#E23300",
         'pink':          "#7B4967",
-        'purple':        "#453A5E"
+        'purple':        "#453A5E",
+        'tengzi':        "#7667AD"
     };
 
     return map[color];
