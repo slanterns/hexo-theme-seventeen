@@ -11,14 +11,14 @@ version: 1.7
 #
 # Available Colors: ['lightblue', 'lightgreen', 'orange', 'pink', 'purple', 'red', 'tengzi']
 # ---------------------------------------------------------------
-color: lightblue
+color: tengzi
 
 # ---------------------------------------------------------------
 # Social Links
 # ---------------------------------------------------------------
 social:
-  Twitter: https://twitter.com/Zxh_faith
-  GitHub: https://github.com/zxh326
+  Twitter: 
+  GitHub: 
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -32,11 +32,11 @@ canonical: true
 # ---------------------------------------------------------------
 # Customization
 # ---------------------------------------------------------------
-favicon: /images/favicon.ico
-icon: /images/favicon.png
-touch_icon: /images/touch-icon.png
-avatar: /images/avatar.png
-logo: /images/logo.png
+favicon: 
+icon: 
+touch_icon: 
+avatar: 
+logo: 
 
 # ---------------------------------------------------------------
 # Post Settings
@@ -49,7 +49,7 @@ auto_excerpt:
   length: 500
 
 # Set default keywords (Use a comma to separate)
-keywords: "Zzde, zxh326, blog, 博客, 独立博客, Hexo"
+keywords: "foo, bar"
 
 # ---------------------------------------------------------------
 # RSS Feed
@@ -59,7 +59,7 @@ rss: /atom.xml
 # ---------------------------------------------------------------
 # Disqus Short Name
 # ---------------------------------------------------------------
-disqus: zzde
+disqus: 
 
 # ---------------------------------------------------------------
 # Third Party Services
@@ -68,7 +68,7 @@ disqus: zzde
 # google_site_verification: WUNRfYChNMDduwLOFHG41TsVrre6BOaI7jKshEvtRts
 
 # Default: https://fonts.googleapis.com
-google_font: https://fonts.cat.net
+google_font: https://fonts.googleapis.com
 
 # Link to JSON file which contains play list for APlayer
 # See: https://aplayer.js.org/docs/#/?id=with-playlist
@@ -83,7 +83,7 @@ menu_top:
   tech:
     name: 技术
     title: 提高姿势水平
-    path: /categories/tech/
+    path: /categories/Tech/
   archive:
     name: 归档
     title: 总览历史文章
@@ -97,7 +97,7 @@ menu_aside:
   friends:
     name: 我的小伙伴们
     title: 友情链接
-    path: /friends
+    path: /Friends
     icon: link
   about:
     name: 关于我
@@ -108,7 +108,7 @@ menu_aside:
 # ---------------------------------------------------------------
 # Miscelaneous (Open Graph Resources)
 # ---------------------------------------------------------------
-twitter_id: Zxh_faith
+twitter_id: 
 # google_plus:
 # fb_admins:
 # fb_app_id:
