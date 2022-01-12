@@ -9,7 +9,7 @@
         {% if is_home() %}
           {{ genTitleToc(page.posts) }}
         {% else %}
-          {{ toc(page.content, { list_number: false }) }}
+          {{ toc(page.content, { list_number: false }) or '<span class="toc-text">ない.</span>' }}
         {% endif %}
       </div>
     </div>

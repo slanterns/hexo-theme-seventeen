@@ -17,7 +17,7 @@
     <div class="post-content">
       {% if page.toc !== false %}
       <div class="toc-container">
-        {{ toc(page.content, { list_number: false }) }}
+        {{ toc(page.content, { list_number: false }) or '<span class="toc-text">ない.</span>' }}
       </div>
       {% endif %}
       {{ page.content }}
