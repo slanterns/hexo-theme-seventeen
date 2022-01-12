@@ -15,9 +15,9 @@
     {% if is_post() %}{% include '_partials/expired-warning.njk' %}{% endif %}
 
     <div class="post-content">
-      {% if page.toc !== false %}
+      {% if page.toc !== false and toc(page.content, { list_number: false }) %}
       <div class="toc-container">
-        {{ toc(page.content, { list_number: false }) or '<span class="toc-text">ない.</span>' }}
+        {{ toc(page.content, { list_number: false }) }}
       </div>
       {% endif %}
       {{ page.content }}
