@@ -8,11 +8,11 @@
 
 {% block content %}
   {% for post in page.posts.toArray() %}
-    {% set post_class = 'post post-type-' + post.type | default('normal') %}
+    {% set post_class = 'post post-type-' + post.type or 'normal' %}
 
     <article class="{{ post_class }} hentry">
-      <h2 id="{{ (post.title | default('无标题')) | replace(" ", "-") }}" class="post-title">
-        <a href="{{ url_for(post.path) }}">{{ post.title | default('无标题') }}</a>
+      <h2 id="{{ (post.title or '无标题') | replace(" ", "-") }}" class="post-title">
+        <a href="{{ url_for(post.path) }}">{{ post.title or '无标题' }}</a>
       </h2>
 
       <div class="post-content">

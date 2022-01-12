@@ -6,10 +6,10 @@
 
 {% block content %}
 
-  {% set post_class = 'post post-type-' + page.type | default('normal') %}
+  {% set post_class = 'post post-type-' + page.type or 'normal' %}
   <article class="{{ post_class }} hentry">
     <h1 class="post-title">
-      <a href="{{ url_for(page.path) }}">{{ page.title | default('无标题') }}</a>
+      <a href="{{ url_for(page.path) }}">{{ page.title or '无标题' }}</a>
     </h1>
 
     {% if is_post() %}{% include '_partials/expired-warning.njk' %}{% endif %}
