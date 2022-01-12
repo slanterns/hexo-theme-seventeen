@@ -11,4 +11,4 @@ Migrate to Nunjucks for adapting hexo@5.x by slanterns.
 &ensp;
 
 ### Todo
-- [ ] By `is_home()`, generate a widget with the posts on the current page (click to locate) on each index page.
+- [x] Generate a widget with the posts on the current page (click to locate) on each index page.

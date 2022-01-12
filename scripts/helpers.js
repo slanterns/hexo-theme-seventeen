@@ -39,3 +39,10 @@ hexo.extend.helper.register('nanobarThemeColor', (color) => {
 
     return map[color];
 });
+
+// generate a string consist of the titles on the current page and feed it to `toc`,
+// which will automatically generate the table of contents by scaning all headings
+hexo.extend.helper.register('genTitleToc', (posts) => {
+    const titleString = posts.map(post => post.title).map(title => `<h2 id="${title.replaceAll(" ", "-")}">${title}</h2>`).join("");
+    return hexo.extend.helper.store['toc'].call(hexo, titleString, { list_number: false });
+});

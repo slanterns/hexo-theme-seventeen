@@ -1,12 +1,16 @@
 {# For normal widget, use id `sbnormal` instead of `sbpin` which for pinned widget #}
 <div id="sbpin">
   {# TOC Widget #}
-  {% if (is_post() or is_page()) and page.toc !== false %}
+  {% if (is_post() or is_page() or is_home()) and page.toc !== false %}
   <div class="clf widget-item widget-toc">
-    <h3 class="widget-title">文章目录</h3>
+    <h3 class="widget-title">{% if is_home() %}当页文章{% else %}文章目录{% endif %}</h3>
     <div class="textwidget">
       <div class="toc-container">
-        {{ toc(page.content, { list_number: false }) }}
+        {% if is_home() %}
+          {{ genTitleToc(page.posts) }}
+        {% else %}
+          {{ toc(page.content, { list_number: false }) }}
+        {% endif %}
       </div>
     </div>
   </div>
