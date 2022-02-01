@@ -1,5 +1,7 @@
 # hexo-theme-seventeen
 
+*This branch includes custom settings for blog.slanterns.net*
+
 原 WordPress 主题：[Balthild Ires/Seventeen](http://git.oschina.net/balthild/Seventeen)
 
 由 [prin (@prinsss)](https://prin.pw) 移植至 Hexo。
