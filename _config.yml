@@ -32,11 +32,11 @@ canonical: true
 # ---------------------------------------------------------------
 # Customization
 # ---------------------------------------------------------------
-favicon: 
-icon: 
-touch_icon: 
-avatar: 
-logo: 
+favicon: /images/favicon.ico
+icon: /images/icon.png
+touch_icon: /images/touch-icon.png
+avatar: /images/avatar.png
+logo: /images/logo.png
 
 # ---------------------------------------------------------------
 # Post Settings
