@@ -17,8 +17,8 @@ color: tengzi
 # Social Links
 # ---------------------------------------------------------------
 social:
-  Twitter: 
-  GitHub: 
+  Twitter: https://twitter.com/slanterns1
+  GitHub: https://github.com/slanterns
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -49,7 +49,7 @@ auto_excerpt:
   length: 500
 
 # Set default keywords (Use a comma to separate)
-keywords: "foo, bar"
+keywords: "slanterns, Slanterns, 技术, 动画, 日常, ACG, 随笔"
 
 # ---------------------------------------------------------------
 # RSS Feed
@@ -59,13 +59,13 @@ rss: /atom.xml
 # ---------------------------------------------------------------
 # Disqus Short Name
 # ---------------------------------------------------------------
-disqus: 
+disqus: slanterns
 
 # ---------------------------------------------------------------
 # Third Party Services
 # ---------------------------------------------------------------
-# google_analytics: UA-65656002-1
-# google_site_verification: WUNRfYChNMDduwLOFHG41TsVrre6BOaI7jKshEvtRts
+# google_analytics: 
+# google_site_verification: 
 
 # Default: https://fonts.googleapis.com
 google_font: https://fonts.googleapis.com
@@ -108,7 +108,7 @@ menu_aside:
 # ---------------------------------------------------------------
 # Miscelaneous (Open Graph Resources)
 # ---------------------------------------------------------------
-twitter_id: 
+twitter_id: slanterns1
 # google_plus:
 # fb_admins:
 # fb_app_id:
