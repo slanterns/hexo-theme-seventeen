@@ -34,7 +34,7 @@ canonical: true
 # ---------------------------------------------------------------
 favicon: /images/favicon.ico
 icon: /images/icon.png
-touch_icon: /images/touch-icon.png
+touch_icon: /images/icon.png
 avatar: /images/avatar.png
 logo: /images/logo.png
 
