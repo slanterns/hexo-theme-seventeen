@@ -45,7 +45,7 @@
 {% endif %}
 
 {% if rss %}
-  {{ feed_tag(full_url_for(rss), {'type': 'application/atom+xml'}) }}
+  {{ feed_tag(rss) }}
 {% endif %}
 
 {% if theme.canonical %}
